@@ -75,19 +75,19 @@ function App() {
 
   return (
     <>
-      <div className="main bg-[#212529] min-h-screen text-white w-full">
+      <div className="main bg-[#212529] min-h-screen text-white md:w-full">
         <Navbar />
 
         {/* add todo */}
         <div className="input w-full flex flex-col gap-2">
           <h1 className='text-2xl font-bold place-self-center mt-3 text-[#dee2e6] '>What will you do Today?</h1>
           <div className="flex justify-center items-center gap-3">
-            <input value={Todo} onChange={handleChange} type="text" className='p-5 outline-none place-self-center border border-[#dee2e6]  w-[490px] h-10 bg-transparent rounded-full' />
+            <input value={Todo} onChange={handleChange} type="text" className='p-5 outline-none place-self-center border border-[#dee2e6]  sm:w-[490px] h-10 bg-transparent rounded-full' />
             <button onClick={handleAdd} className='bg-[#e5383b] py-2 px-8 rounded-full hover:scale-102 cursor-pointer'>Add</button>
           </div>
         </div>
         {/* My todos */}
-        <div className="Todos p-4 place-self-center flex flex-col flex-wrap min-h-[400px] mt-3 rounded-xl w-[600px] bg-[#343a40] gap-4">
+        <div className="Todos p-4 place-self-center flex flex-col flex-wrap h-[73vh] sm:min-h-[400px] mt-3 rounded-xl w-[90vw] sm:w-[600px] bg-[#343a40] gap-4">
           {Todos.length === 0 && <div className='text-gray-400'>No Todos yet</div>}
           {Todos.map(item => {
             return <div key={item.id} className="todo flex justify-between">
