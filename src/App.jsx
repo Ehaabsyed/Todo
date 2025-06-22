@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import Navbar from './assets/components/navbar'
 import { FaRegEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import Navbar from './components/Navbar';
 
 
 
